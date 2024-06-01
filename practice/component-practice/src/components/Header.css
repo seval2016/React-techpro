@@ -1,0 +1,9 @@
+.header {
+    background-color: #77C754;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
