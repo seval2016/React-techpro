@@ -10,7 +10,7 @@ const Jsx2 = () => {
 	// document.getElementById("lblName").innerHTML = name;
 
 
-    // KURAL: Eger JSX icinde JS ifadesi kullanilacaksa { suslu parantez icine yazilmalidir}
+    // KURAL: Eger JSX icinde JS ifadesi kullanilacaksa { suslu parantez icine yazilmalidir}. 
 
 	return (
 		<div>
