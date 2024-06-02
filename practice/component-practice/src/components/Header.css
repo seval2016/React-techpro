@@ -1,9 +1,20 @@
 .header {
-    background-color: #77C754;
-    height: 80px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-  }
+  background-color: #77c754;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
   
+}
+
+/* Header.css */
+
+.header .logo {
+  margin-right: 20px; /* Logo ile header metni arasına boşluk ekler */
+}
+
+/* Diğer header stilleri */

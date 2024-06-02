@@ -7,6 +7,7 @@ import App from './App.jsx'
 |   |-- Header.js
 |   |-- Sidebar.js
 |   |-- Content.js
+|   |-- Footer.js
 |-- App.js
 |-- App.css
 |-- index.js

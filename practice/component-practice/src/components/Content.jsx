@@ -3,22 +3,19 @@
 import "./Content.css";
 
 const Content = () => {
+  const boxes = [...new Array(6)];
   return (
-    <main className="content">
+    <div className="content">
       {
         <div>
-          <span>Content</span>
           <div className="boxes">
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
+            {boxes.map((_, index) => (
+              <div className="box" key={index}></div>
+            ))}
           </div>
         </div>
       }
-    </main>
+    </div>
   );
 };
 

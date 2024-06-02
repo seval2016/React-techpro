@@ -1,0 +1,12 @@
+/* Logo.css */
+.logo img {
+    height: 40px;
+    
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  

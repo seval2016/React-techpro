@@ -1,18 +1,18 @@
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const sidebar=[...new Array(6)];
+
   return (
     <aside className="sidebar">
       {
         <div>
-          <span>Sidebar</span>
           <div className="sbr-boxes">
-            <div className="sbr-box"></div>
-            <div className="sbr-box"></div>
-            <div className="sbr-box"></div>
-            <div className="sbr-box"></div>
-            <div className="sbr-box"></div>
-            <div className="sbr-box"></div>
+          {
+            sidebar.map((_, index) => (
+              <div className="sbr-box" key={index}></div>
+            ))
+          }
           </div>
         </div>
       }
