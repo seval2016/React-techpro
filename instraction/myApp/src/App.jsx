@@ -1,5 +1,4 @@
-import HelloReact from "./components/01-hello/hello-react";
-
+/*import HelloReact from "./components/01-hello/hello-react";
 import HelloWorld from "./components/01-hello/hello-world";
 import Jsx1 from "./components/02-jsx/jsx2"
 import Jsx2 from "./components/02-jsx/jsx2";
@@ -13,11 +12,14 @@ import Style2 from "./components/03-style/style2";
 import Style3 from "./components/03-style/style3";
 import Style4 from "./components/03-style/style4";
 import Style5 from "./components/03-style/style5";
+import Clock1 from "./components/04-clock1/clock1";
+*/
+import Clock2 from "./components/06-clock2/clock2";
 
 const App = () => {
   return (
     <div>
-      <HelloReact />
+      {/*<HelloReact />
       <HelloWorld />
       <Jsx1/>
       <Jsx2/>
@@ -31,6 +33,15 @@ const App = () => {
       <Style3/>
       <Style4/>
       <Style5/>
+      <Clock1/>
+      <Greetings/>
+      <Products/>
+      */}
+      
+      <Clock2 textColor="brown" bgColor="aqua" hideTime={false}/>
+      <Clock2 textColor="yellow" bgColor="navy" hideTime={true}/>
+
+
     </div>
   );
 };
