@@ -1,0 +1,7 @@
+[
+	{ "id": 1, "title": "Photoshop", "score": "90" },
+	{ "id": 2, "title": "Illustrator", "score": "80" },
+	{ "id": 3, "title": "Indesign", "score": "40" },
+	{ "id": 4, "title": "Corel Draw", "score": "70" },
+	{ "id": 5, "title": "Figma", "score": "85" }
+]

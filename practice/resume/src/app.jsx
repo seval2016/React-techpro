@@ -1,14 +1,14 @@
 
-import Header from "./components/header";
+import Header from './components/header'
+import MainContent from './components/content'
 
 const App = () => {
   return (
     <>
-      <Header />
+        <Header/>
+        <MainContent/>
     </>
   )
 }
-
-
 
 export default App
