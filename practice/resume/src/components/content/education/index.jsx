@@ -5,7 +5,7 @@ import Education from "./education";
 const Educations = () => {
   return (
     <section id="education" className="resume">
-      <SectionHeader title="Education" />
+      <SectionHeader title="Education"/>
 
       <div className="row">
         {educations.map((item, index) => (

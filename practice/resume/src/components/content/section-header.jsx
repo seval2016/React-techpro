@@ -13,8 +13,7 @@ const SectionHeader = ({title}) => {
 
 
 SectionHeader.propTypes = {
-	title: PropTypes.string.isRequired,
-	score: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired
   };
 
 export default SectionHeader;

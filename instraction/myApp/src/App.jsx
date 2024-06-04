@@ -13,8 +13,12 @@ import Style3 from "./components/03-style/style3";
 import Style4 from "./components/03-style/style4";
 import Style5 from "./components/03-style/style5";
 import Clock1 from "./components/04-clock1/clock1";
-*/
 import Clock2 from "./components/06-clock2/clock2";
+import Image from "./components/07-images/image";
+import Gallery from "./components/08-image-gallery/gallery";
+*/
+
+import ProfileCard from "./components/09-profile-card/profile-card";
 
 const App = () => {
   return (
@@ -36,10 +40,20 @@ const App = () => {
       <Clock1/>
       <Greetings/>
       <Products/>
-      */}
-      
       <Clock2 textColor="brown" bgColor="aqua" hideTime={false}/>
-      <Clock2 textColor="yellow" bgColor="navy" hideTime={true}/>
+  <Clock2 textColor="yellow" bgColor="navy" hideTime={true}/>
+  <Image/>
+  <Gallery/>      <ReactBootstrap />
+      */}
+
+      <ProfileCard
+        avatar="/img/profile.jpg"
+        name="Susan Doe"
+        location="Brussels, Belgium"
+        shot="14"
+        followers="121"
+        following="25"
+      />
 
 
     </div>
