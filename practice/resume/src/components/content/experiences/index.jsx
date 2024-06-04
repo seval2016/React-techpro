@@ -1,6 +1,6 @@
 import SectionHeader from "../section-header";
 import experiences from "../../../data/experience.json";
-import Experience from "./experience";
+import Experience from "./experiences";
 
 const Experiences = () => {
   return (

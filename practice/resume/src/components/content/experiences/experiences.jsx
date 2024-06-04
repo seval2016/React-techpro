@@ -1,4 +1,4 @@
-import "./experience.css";
+import "./experiences.css";
 import PropTypes from "prop-types";
 
 const Experience = ({ company, title, date, desc, index }) => {
