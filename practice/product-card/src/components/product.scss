@@ -1,0 +1,39 @@
+
+.products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .card{   
+        position: relative; 
+        width: 23rem;
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+        border-color: transparent;
+
+        .price{
+            color: #7A9C1C;
+            font-weight: bold;
+        }
+        .discountedPrice{
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .discount{
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            padding: 3px 7px;
+            background-color: #7A9C1C;
+            border-radius: 5px;
+            color: white;
+            letter-spacing: 0.825px;
+
+        }
+    }
+}
+
+

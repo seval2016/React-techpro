@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "WOMEN'S TOP",
+    "image": "3.jpg",
+    "price": 999.99,
+    "discount": 0.15,
+    "rate": 4.5
+  },
+  {
+    "id": 2,
+    "title": "MEN'S SHIRT",
+    "image": "5.jpg",
+    "price": 499.99,
+    "discount": 0,
+    "rate": 4.2
+  },
+  {
+    "id": 3,
+    "title": "WOMEN'S TOP",
+    "image": "3.jpg",
+    "price": 199.99,
+    "discount": 0.4,
+    "rate": 4.8
+  },
+  {
+    "id": 4,
+    "title": "MEN'S SHIRT",
+    "image": "5.jpg",
+    "price": 199.99,
+    "discount": 0.18,
+    "rate": 4.8
+  }
+]
