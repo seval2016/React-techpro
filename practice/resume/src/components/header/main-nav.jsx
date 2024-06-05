@@ -1,3 +1,4 @@
+import React from "react";
 import './main-nav.css'
 const MainNav = () => {
   return (

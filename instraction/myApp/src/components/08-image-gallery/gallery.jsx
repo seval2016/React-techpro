@@ -1,3 +1,4 @@
+import React from "react";
 import images from "./data.json";
 import "./gallery.scss";
 

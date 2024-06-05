@@ -1,6 +1,5 @@
-
+import React from "react";
 import "./profile-card.scss";
-import PropTypes from "prop-types";
 
 const ProfileCard = (props) => {
 	const { avatar, name, location, shot, followers, following } = props;
@@ -33,12 +32,5 @@ const ProfileCard = (props) => {
 		</div>
 	);
 };
-ProfileCard.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    shot: PropTypes.string.isRequired,
-    followers: PropTypes.string.isRequired,
-    following: PropTypes.string.isRequired
-  };
+
 export default ProfileCard;

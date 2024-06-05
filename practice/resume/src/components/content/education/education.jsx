@@ -1,5 +1,5 @@
+import React from "react";
 import "./education.css";
-import PropTypes from "prop-types";
 
 const Education = ({ title, date, desc, index }) => {
   return (
@@ -11,13 +11,6 @@ const Education = ({ title, date, desc, index }) => {
       </div>
     </div>
   );
-};
-
-Education.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  index: PropTypes.string.isRequired,
 };
 
 export default Education;

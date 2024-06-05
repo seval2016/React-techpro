@@ -1,4 +1,4 @@
-
+import React from "react";
 import './navigation-bar.css'
 
 const NavigationBar = () => {

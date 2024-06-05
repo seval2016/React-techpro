@@ -1,5 +1,5 @@
+import React from "react";
 import "./testimonal.css";
-import PropTypes from "prop-types"; 
 
 const Testimonal = ({ image, name, message }) => {
   return (
@@ -18,9 +18,4 @@ const Testimonal = ({ image, name, message }) => {
     </div>
   );
 };
-Testimonal.propTypes = {
-	image: PropTypes.string.isRequired,
-	name: PropTypes.string.isRequired,
-  message:PropTypes.string.isRequired
-  };
 export default Testimonal;

@@ -1,5 +1,4 @@
 import "./experiences.css";
-import PropTypes from "prop-types";
 
 const Experience = ({ company, title, date, desc, index }) => {
   return (
@@ -13,14 +12,6 @@ const Experience = ({ company, title, date, desc, index }) => {
       </div>
     </div>
   );
-};
-
-Experience.propTypes = {
-  company: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  index: PropTypes.string.isRequired,
 };
 
 export default Experience;

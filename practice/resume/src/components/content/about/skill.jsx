@@ -1,6 +1,6 @@
-
+import React from "react";
 import "./skill.css";
-import PropTypes from "prop-types";
+
 
 const Skill = ({title, score}) => {
 	return (
@@ -21,8 +21,5 @@ const Skill = ({title, score}) => {
 		</div>
 	);
 };
-Skill.propTypes = {
-	title: PropTypes.string.isRequired,
-	score: PropTypes.string.isRequired
-  };
+
 export default Skill;

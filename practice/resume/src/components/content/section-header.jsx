@@ -1,7 +1,5 @@
-
+import React from "react";
 import "./section-header.css"
-
-import PropTypes from "prop-types";
 
 const SectionHeader = ({title}) => {
 	return (
@@ -10,10 +8,5 @@ const SectionHeader = ({title}) => {
 		</div>
 	);
 };
-
-
-SectionHeader.propTypes = {
-	title: PropTypes.string.isRequired
-  };
 
 export default SectionHeader;
