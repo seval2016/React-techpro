@@ -19,15 +19,16 @@ import Gallery from "./components/08-image-gallery/gallery";
 import ProfileCard from "./components/09-profile-card/profile-card";
 import ReactBootstrap from "./components/10-bootstrap/react-botstrap";
 import Icons from "./components/11-icons/icons";
-
-
-*/
-
-
-
-
 import Event1 from "./components/12-events/event1";
 import Event2 from "./components/12-events/event2";
+import State from "./components/14-state/state";
+import Stateless from "./components/14-state/stateless";
+
+*/
+import Counter1 from "./components/15-counter/counter1";
+import Counter2 from "./components/15-counter/counter2";
+
+
 
 const App = () => {
   return (
@@ -63,11 +64,16 @@ const App = () => {
       />
       <ReactBootstrap/>
       <Icons/>
-      */}
-
-     
       <Event1/>
       <Event2/>
+      <State/>
+      <Stateless/>
+      */}
+
+<Counter1/>
+<Counter2/>
+
+   
 
 
     </div>
