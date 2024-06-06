@@ -16,9 +16,18 @@ import Clock1 from "./components/04-clock1/clock1";
 import Clock2 from "./components/06-clock2/clock2";
 import Image from "./components/07-images/image";
 import Gallery from "./components/08-image-gallery/gallery";
+import ProfileCard from "./components/09-profile-card/profile-card";
+import ReactBootstrap from "./components/10-bootstrap/react-botstrap";
+import Icons from "./components/11-icons/icons";
+
+
 */
 
-import ProfileCard from "./components/09-profile-card/profile-card";
+
+
+
+import Event1 from "./components/12-events/event1";
+import Event2 from "./components/12-events/event2";
 
 const App = () => {
   return (
@@ -43,10 +52,8 @@ const App = () => {
       <Clock2 textColor="brown" bgColor="aqua" hideTime={false}/>
   <Clock2 textColor="yellow" bgColor="navy" hideTime={true}/>
   <Image/>
-  <Gallery/>      <ReactBootstrap />
-      */}
-
-      <ProfileCard
+  <Gallery/>
+  <ProfileCard
         avatar="/img/profile.jpg"
         name="Susan Doe"
         location="Brussels, Belgium"
@@ -54,6 +61,13 @@ const App = () => {
         followers="121"
         following="25"
       />
+      <ReactBootstrap/>
+      <Icons/>
+      */}
+
+     
+      <Event1/>
+      <Event2/>
 
 
     </div>

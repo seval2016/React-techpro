@@ -2,13 +2,14 @@
 .products{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
 
     .card{   
         position: relative; 
-        width: 23rem;
+        width: 18rem;
         box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
         border-color: transparent;
 

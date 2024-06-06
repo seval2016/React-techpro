@@ -1,7 +1,6 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { FaStar } from "react-icons/fa";
-import CloseButton from 'react-bootstrap/CloseButton';
+import Card from "react-bootstrap/Card"; /*npm install react-bootstrap bootstrap */
+import { FaStar } from "react-icons/fa"; /* npm install react-icons */
 import "./product.scss";
 
 const Product = ({ title, image, price, discount, rate }) => {
