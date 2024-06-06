@@ -23,12 +23,13 @@ import Event1 from "./components/12-events/event1";
 import Event2 from "./components/12-events/event2";
 import State from "./components/14-state/state";
 import Stateless from "./components/14-state/stateless";
-
-*/
 import Counter1 from "./components/15-counter/counter1";
 import Counter2 from "./components/15-counter/counter2";
 
+*/
 
+import UserList from "./components/16-birthday/user-list";
+import UseEffect1 from "./components/17-useeffect/useeffect1";
 
 const App = () => {
   return (
@@ -68,14 +69,12 @@ const App = () => {
       <Event2/>
       <State/>
       <Stateless/>
+      <Counter1/>
+      <Counter2/>
       */}
 
-<Counter1/>
-<Counter2/>
-
-   
-
-
+      <UserList />
+      <UseEffect1 />
     </div>
   );
 };
