@@ -8,6 +8,7 @@ import User from "./user";
 
 const UserList = () => {
 	const newUserList = data.map((item) => ({ ...item, isCelebrated: false }));
+	//diziyi manipule edip her dönüşte bütün elemanlara "isCelebrated: false" eklenmesi için
 
 	const [users, setUsers] = useState(newUserList);
 
@@ -21,8 +22,9 @@ const UserList = () => {
 			item.id === id ? { ...item, isCelebrated: true } : item
 		);
 		setUsers(arr);
+		
 	};
-
+		
 	return (
 		<Container className="mt-4">
 			<h2>Birthday people</h2>
@@ -30,6 +32,7 @@ const UserList = () => {
 
 			{users.map((item) => (
 				<User key={item.id} {...item} celebrateUser={celebrateUser} />
+				
 			))}
 
 			<Button onClick={celebrateAllUsers} disabled={users.length <= 0}>
