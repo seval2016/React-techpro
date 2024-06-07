@@ -1,0 +1,18 @@
+.recipe-banner {
+	background-image: url("/img/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	height: 40vh;
+	padding: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		color: rgb(215, 215, 215);
+		text-shadow: 0 0 5px black;
+	}
+}

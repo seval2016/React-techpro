@@ -1,0 +1,7 @@
+npm install sass --save-dev
+/*************************/
+npm i react-icons
+/*************************/
+
+npm install react-bootstrap bootstrap 
+import 'bootstrap/dist/css/bootstrap.min.css';

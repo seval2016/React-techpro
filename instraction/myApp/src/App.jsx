@@ -31,20 +31,19 @@ import Counter1 from "./components/15-counter/counter1";
 import Counter2 from "./components/15-counter/counter2";
 import UserList from "./components/16-birthday/user-list";
 import UseEffect1 from "./components/17-useeffect/useeffect1";
-import Clock3 from "./components/18-clock3/clock3";
 import UseEffect3 from "./components/17-useeffect/useeffect3";
-*/
+import Clock3 from "./components/18-clock3/clock3";
 import CountryFilter from "./components/19-country-filter/country-filter";
-/*
-
 import UseRef from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-type-comp/class-comp";
-*/
+import ProductStore from "./components/22-api-products/product-store";*/
+import Recipes from "./components/23-recipes/recipes";
+
 
 const App = () => {
-  return (
-    <div>
-      {/* 			
+	return (
+		<div>
+			{/* 			
       <HelloReact />
 			<HelloWorld />
       <Jsx1/>
@@ -86,15 +85,23 @@ const App = () => {
       <Counter2/>
       <UserList/>
       <UseEffect1/>
-          <Clock3/>
+      <Clock3/>
       <UseEffect3/>
-      <CountryFilter/>
+       <CountryFilter/>
       <UseRef/>
-        <ClassComp/>
+      <ClassComp/>
+      <ProductStore/>
       */}
-      <CountryFilter />
-    </div>
-  );
+      
+      
+      <Recipes/>
+      
+        
+      
+      
+
+		</div>
+	);
 };
 
 export default App;
