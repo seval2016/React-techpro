@@ -2,13 +2,32 @@ import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 
 const State = () => {
-    {/* const [degisken , setDegisken] = useState(0) -> state kullanım şeli 
-        
-      useState(0) -> useState hook'u değişkenin saklayacağı il değeri parametre olarak alır. Bu ilk değer 
-      numeric,string,object,array olabilir. 
-      Not: Set fonksiyonları asenkron yapılar oldukları için peş peşe 
-      çağrılmaları gerektiği durumlarda (döngüler vs) kullanılmaz.
-        */}
+    {/*
+		* her component!in kendine ait bir state olur
+		* oop mantığında private fields kavramına karşılık gelir 
+		* State,component içerisinde kullanılan data'yı saklamaktadır. 
+		* Bir component'in state bilgisine başka bir component'den ulaşılamaz.(Encapsulation)
+
+		* state kullanım kalıbı ->const [counter , setCounter] = useState(0)
+		counter : Değeri saklayan değişken
+		setCounter : Değişkenin değiştirmekle görevli method 
+        useState(0) -> useState hook'u değişkenin saklayacağı il değeri parametre olarak alır. Bu ilk değer 
+        numeric,string,object,array olabilir. 
+        Not: Set fonksiyonları asenkron yapılar oldukları için peş peşe çağrılmaları gerektiği durumlarda (döngüler vs) kullanılmaz.
+       
+		Rendering : Component içindeki JS ve JSX kodlarının çalıştırılması işlemine rendering denir.
+		Rendering sadece ilk çalışmalarda gerçekleşir. Component hala hafizadayken yapılan değişikliklere rerendering
+		denir.
+
+		Rerendering hangi durumlarda oluşur :
+		1. state güncellendiğinde yada değiştiğinde 
+		2. props değiştiğinde
+		3. component ilk kez render edildiğinde
+		4. parent component re-render olduğunda
+		5. contex güncellendiğinde	
+		
+		*/}
+		
 	const [classes, setClasses] = useState("bg-dark text-light");
 
 
