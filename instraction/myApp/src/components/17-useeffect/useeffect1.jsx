@@ -3,48 +3,66 @@ import { Button } from "react-bootstrap";
 import UseEffect2 from "./useeffect2";
 
 const UseEffect1 = () => {
-	const [message, setMessage] = useState("Hi");
-	const [error, setError] = useState("");
-	const [showComp, setShowComp] = useState(false);
+  const [message, setMessage] = useState("Hi");
+  const [error, setError] = useState("");
+  const [showComp, setShowComp] = useState(false);
 
-	/*
+  /*
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    USE EFFECT asenkrondur, her zaman JSX render olduktan sonra calisir.
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    */
+    UseEffect asenkrondur, her zaman JSX render olduktan sonra calisir.
+	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	UseEffect'ler React'daki sideEffect'leri yönetmek için kullanılan kod bloklarıdır.
+	SideEffect'ler: API call, DOM manipulation, Timer, Event listener, LocalStorage gibiduurmlarda meydana gelir
+
+	MOUNTING : Component'in ilk render edilme bağlanma anı.
+
 	useEffect(() => {
-		console.log("MOUNTING: Buradaki kodlar sadece render da calisir");
+		console.log("sadece ilk render'da çalışır");
 	}, []);
-	
+
+	UPDATING : Component'in render edilme durumu
 
 	useEffect(() => {
-		console.log("UPDATING: Buradaki kodlar render ve re-render da calisir");
-	});
+	   console.log("UPDATING: Buradaki kodlar render ve re-render da calisir");
+	 });
 
 	useEffect(() => {
-		console.log(
-			"UPDATING-DEPENDENCY-ARRAY(DA): Buradaki kodlar dependency array icindeki degisken(ler) degistiginde calisir."
-		);
-	}, [error]);
+    	console.log(
+    	"UPDATING-DEPENDENCY-ARRAY(DA): Buradaki kodlar dependency array icindeki degisken(ler) degistiginde calisir."
+    	);
+  	}, [sayac]); sayac isimli state veya prop her güncellendiğinde çalışır.
 
-	
-	console.log(message);
+	UNMOUNTING: Component'in görünen bir component'in kaybolması hafızadan silinmesi.
+   
+    */
+  useEffect(() => {
+    console.log("MOUNTING: Buradaki kodlar sadece render da calisir");
+  }, []);
 
-	return (
-		<div className="mt-5 text-center">
-			{showComp && <UseEffect2 />}
+  useEffect(() => {
+    console.log("UPDATING: Buradaki kodlar render ve re-render da calisir");
+  });
 
-			<Button onClick={() => setMessage(Math.random())}>
-				Set Message
-			</Button>
+  useEffect(() => {
+    console.log(
+      "UPDATING-DEPENDENCY-ARRAY(DA): Buradaki kodlar dependency array icindeki degisken(ler) degistiginde calisir."
+    );
+  }, [error]); //bu kod parçasında error değeri değiştikçe use effect değişir
 
-			<Button onClick={() => setError(Math.random())}>Set Error</Button>
+  console.log(message);
 
-			<Button onClick={() => setShowComp((prev) => !prev)}>
-				Toggle Comp
-			</Button>
-		</div>
-	);
+  return (
+    <div className="mt-5 text-center">
+      {showComp && <UseEffect2 />}
+
+      <Button onClick={() => setMessage(Math.random())}>Set Message</Button>
+
+      <Button onClick={() => setError(Math.random())}>Set Error</Button>
+
+      <Button onClick={() => setShowComp((prev) => !prev)}>Toggle Comp</Button>
+    </div>
+  );
 };
 
 export default UseEffect1;
