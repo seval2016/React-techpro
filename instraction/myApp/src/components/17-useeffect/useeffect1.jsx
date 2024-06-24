@@ -34,6 +34,14 @@ const UseEffect1 = () => {
   	}, [sayac]); sayac isimli state veya prop her güncellendiğinde çalışır.
 
 	UNMOUNTING: Component'in görünen bir component'in kaybolması hafızadan silinmesi.
+
+	useEffect(() => {
+		
+			console.log(
+				"UNMOUNTING: Bu kodlar component hafizadan atilmadan hemen once calisir."
+			);
+
+	}, []);
    
     */
   useEffect(() => {
