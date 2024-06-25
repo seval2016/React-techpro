@@ -89,12 +89,12 @@ const App = () => {
       <UseEffect3/>
        <CountryFilter/>
       <UseRef/>
-      <ClassComp/>
-      <ProductStore/>
+      <ClassComp/>   <ProductStore/>
+         
       */}
+    <Recipes/>
       
-      
-      <Recipes/>
+  
       
         
       
