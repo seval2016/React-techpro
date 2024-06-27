@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 
+/*
+form2 controller'da herbir form elemanı için ayrı ayrı state yapılmıştı. Bu uygun bir kullanım değil.Eğer fazla 
+sayıda form elemanı olursa hoş bir görüntü olmaz. Bu yüzden aşağıdaki yöntem kullanılır!
+*/
 const Form3 = () => {
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -17,16 +21,17 @@ const Form3 = () => {
 		e.preventDefault();
 
 		// 2- Form validasyon islemi yapilir
-		if (!firstName) {
+		if (!formData.firstName) {
 			alert("Firstname is required");
 			return;
 		}
 
 		// 3- Payload olusturulur
-		// Ayrica bir payload olusturmaya gerek yok. Cunku formData state i bir payload formunda
+		// Not: Burada artık form2 deki gibi ayrica bir payload olusturmaya gerek yok. Cunku formData state i bir payload formunda
 		
-
-		// 4- Payload API'a gonderilir.
+		
+		
+		//  4-Payload API'a gonderilir.
 
 		alert("Hello");
 	};

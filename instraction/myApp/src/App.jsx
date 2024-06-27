@@ -36,8 +36,10 @@ import Clock3 from "./components/18-clock3/clock3";
 import CountryFilter from "./components/19-country-filter/country-filter";
 import UseRef from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-type-comp/class-comp";
-import ProductStore from "./components/22-api-products/product-store";*/
-import Recipes from "./components/23-recipes/recipes";
+import ProductStore from "./components/22-api-products/product-store";
+import Recipes from "./components/23-recipes/recipes";*/
+
+import Form5 from "./components/24-forms/form5";
 
 
 const App = () => {
@@ -73,7 +75,6 @@ const App = () => {
 				followers="121"
 				following="25"
 			/>
-
       <ReactBootstrap/>
       <Icons />
       <Event1/>
@@ -89,11 +90,12 @@ const App = () => {
       <UseEffect3/>
        <CountryFilter/>
       <UseRef/>
-      <ClassComp/>   <ProductStore/>
-         
+      <ClassComp/>
+      <ProductStore/>
+       <Recipes/>  
       */}
-    <Recipes/>
-      
+    
+      <Form5/>
   
       
         

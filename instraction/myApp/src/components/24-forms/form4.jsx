@@ -17,13 +17,13 @@ const Form4 = () => {
 		e.preventDefault();
 
 		// 2- Form validasyon islemi yapilir
-		if (!firstName) {
+		if (!formData.firstName) {
 			alert("Firstname is required");
 			return;
 		}
 
 		// 3- Payload olusturulur
-		// Ayrica bir payload olusturmaya gerek yok. Cunku formData state i bir payload formunda
+		// Not: Burada artık form2 deki gibi ayrica bir payload olusturmaya gerek yok. Cunku formData state i bir payload formunda
 
 		// 4- Payload API'a gonderilir.
 

@@ -18,7 +18,7 @@ const Form2 = () => {
             return;
         }
 
-        // 3- Payload olusturulur
+        // 3- (Backend'e gönderilecek obje) Payload olusturulur
         const payload = {
             firstName,
             lastName,
@@ -27,8 +27,7 @@ const Form2 = () => {
             address
         }
 
-        // 4- Payload API'a gonderilir.
-        
+        // 4- Payload API'a gonderilir.-> daha sonra yapılacak
 
         alert("Hello")
      }
