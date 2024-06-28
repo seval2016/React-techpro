@@ -37,9 +37,12 @@ import CountryFilter from "./components/19-country-filter/country-filter";
 import UseRef from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-type-comp/class-comp";
 import ProductStore from "./components/22-api-products/product-store";
-import Recipes from "./components/23-recipes/recipes";*/
+import Recipes from "./components/23-recipes/recipes";
+import Form6 from "./components/24-forms/form6";
+*/
 
-import Form6 from "./components/24-forms/form5";
+import ProductManager from "./components/25-product-manager";
+
 
 
 const App = () => {
@@ -92,12 +95,14 @@ const App = () => {
       <UseRef/>
       <ClassComp/>
       <ProductStore/>
-       <Recipes/>  
+       <Recipes/> 
+       <Form6/>
       */}
     
-      <Form6/>
+    <ProductManager />
   
-      
+  
+     
         
       
       
