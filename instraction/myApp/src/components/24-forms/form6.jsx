@@ -3,6 +3,31 @@ import React, { useState } from "react";
 import { Button, Container, Form, Spinner } from "react-bootstrap";
 import * as Yup from "yup";
 
+/* 
+Formik yapısı 3 bölümden oluşur 
+1-initial values : Form elemanlarına girilecek bilgilerin saklanacağı ve ilk değerlerinin ayarlandığı bölümdür.
+
+	const initialValues = {
+		firstName: "",
+		lastName: "",
+		phoneNumber: "",
+		email: "",
+	};
+
+2-validationSchema :  Yup aracılığı ile form elemanları ile ilgili validation kuralları belirlenir.
+
+const validationSchema = Yup.object({
+		firstName: Yup.string()
+			.min(2, "Min 2 chars")
+			.max(15, "Max 15 chars")
+			.required("Required"),
+		lastName: Yup.string().required("Required"),
+		password: Yup.string().email("Invalid email").required("Required"),
+	});
+
+3-onSubmit: Form elemanları ile ilgili işlemler bu bölümden yapılır
+*/
+
 const Form6 = () => {
 	const initialValues = {
 		firstName: "",
