@@ -1,5 +1,5 @@
-import React from "react";
 import { useFormik } from "formik";
+import React, { useState } from "react";
 import {
   Alert,
   Button,
@@ -9,19 +9,17 @@ import {
   Spinner,
 } from "react-bootstrap";
 import * as Yup from "yup";
-/*import { getProduct, updateProduct } from "./api";*/
+import { createProduct } from './api';
 
-const newProductForm = () => {
-  //Formik oluşturma
+const NewProductForm = ({ setOperation }) => {
+  const [error, setError] = useState(null);
 
-  //1.Aşama : initial state
   const initialValues = {
     title: "",
     price: "",
     category: "",
     discounted: false,
   };
-  //2.Aşama validationScheama
 
   const validationSchema = Yup.object({
     title: Yup.string().max(50, "Too long").required("Required"),
@@ -32,34 +30,35 @@ const newProductForm = () => {
     category: Yup.string().max(70, "Too long").required("Required"),
   });
 
-  const onSubmit = (values) => {
-    //console.log(values);
+  const onSubmit = async (values) => {
+    try {
+      await createProduct(values);
+      formik.resetForm();
+      setOperation("list");
+    } catch (err) {
+      console.log(err);
+      setError(err);
+    }
   };
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const formik = useFormik({
     initialValues,
     validationSchema,
     onSubmit,
   });
-  /*
-    Not1: onSubmit={formik.handleSubmit} ile submit butonuna basıldıgında formda girilen verileri alacak
-     validationSchema da kontrolünü yapıp bize tepki verecek.
 
-    Not: Formik'de birşeyler yaparken form elemanlarında kullanmamız gereken 3 tane zorunlu yapı vardır 
-     1. name
-     2. value
-     3. onChange
-
-     {...formik.getFieldProps("title")} ile bu yapıları oluşturabiliriz. Form alanlarına göre "title" değişir
-     */
   const isInvalid = (field) => {
     const res = formik.touched[field] && !!formik.errors[field];
     return res;
   };
+
   return (
     <Card>
       <Card.Body>
+        {error?.message ? (
+          <Alert variant="danger">{error?.message}</Alert>
+        ) : null}
+
         <Form noValidate onSubmit={formik.handleSubmit}>
           <FloatingLabel controlId="title" label="Title" className="mb-3">
             <Form.Control
@@ -87,11 +86,11 @@ const newProductForm = () => {
 
           <FloatingLabel controlId="category" label="Category" className="mb-3">
             <Form.Select
-              aria-label="Select Category"
+              aria-label="Select category"
               {...formik.getFieldProps("category")}
               isInvalid={isInvalid("category")}
             >
-              <option>Select</option>
+              <option value="">Select</option>
               <option value="computer">Computer</option>
               <option value="monitor">Monitor</option>
               <option value="keyboard">Keyboard</option>
@@ -101,18 +100,32 @@ const newProductForm = () => {
             </Form.Control.Feedback>
           </FloatingLabel>
 
-          <Form.Check
+          <Form.Check // prettier-ignore
             type="checkbox"
             id="discounted"
             label="Discounted"
             className="mb-3"
             {...formik.getFieldProps("discounted")}
           />
-          <Button type="submit">Create</Button>
+
+          <Button
+            variant="secondary"
+            className="me-2"
+            onClick={() => setOperation("list")}
+          >
+            Cancel
+          </Button>
+
+          <Button
+            type="submit"
+            disabled={formik.isSubmitting || !(formik.dirty && formik.isValid)}
+          >
+            {formik.isSubmitting ? <Spinner size="sm" /> : "Create"}
+          </Button>
         </Form>
       </Card.Body>
     </Card>
   );
 };
 
-export default newProductForm;
+export default NewProductForm;
