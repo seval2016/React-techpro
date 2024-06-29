@@ -39,9 +39,9 @@ import ClassComp from "./components/21-class-type-comp/class-comp";
 import ProductStore from "./components/22-api-products/product-store";
 import Recipes from "./components/23-recipes/recipes";
 import Form6 from "./components/24-forms/form6";
-*/
+import ProductManager from "./components/25-product-manager";*/
 
-import ProductManager from "./components/25-product-manager";
+
 
 
 
@@ -97,9 +97,10 @@ const App = () => {
       <ProductStore/>
        <Recipes/> 
        <Form6/>
+       <ProductManager />
       */}
     
-    <ProductManager />
+    
   
   
      
