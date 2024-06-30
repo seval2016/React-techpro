@@ -14,7 +14,12 @@ import CustomerDetails from "../components/26-routing/customer-details";
 import UseNavigate from "../components/26-routing/use-navigate";
 import Converter from "../components/27-currencies/converter";
 
-const router = createBrowserRouter([
+/*
+Single Page Application(SPA) larda sanal sayfalar arasında geçişler yapmak için Router kullanılmalıdır.
+En populer router kütüphanesi react-router-dom dur.
+*/
+
+const router = createBrowserRouter([ //Browser'ın anlayabilmesi için bir yönlendirme yapısı oluşturuyoruz.
 	{
 		path: "/",
 		element: <UserLayout />,

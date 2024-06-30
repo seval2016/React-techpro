@@ -15,7 +15,7 @@ const UserLayout = () => {
 						<MainMenu />
 					</Col>
 					<Col md={8} lg={9}>
-						<Outlet />{/* Single Page Application'larda değişecek olan component buraya yerleşir */}
+						<Outlet />
 					</Col>
 				</Row>
 			</Container>
