@@ -4,7 +4,7 @@ import StoreContext from "../../store";
 
 const CurrencyList = () => {
 	const { currencies } = useContext(StoreContext);
-	const arrCurrencies = Object.entries(currencies);
+	const arrCurrencies = Object.entries(currencies);//veriler obj olarak geliyor map ile gezebilmek için objeyi array'e çevirmemiz gerekli
 
 	return (
 		<Dropdown align="end">

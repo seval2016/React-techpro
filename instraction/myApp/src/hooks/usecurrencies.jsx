@@ -17,7 +17,7 @@ const useCurrencies = () => {
 				console.log(err);
 				setError(err);
 			} finally {
-				setLoading(false);
+				setLoading(false); 
 			}
 		};
 
