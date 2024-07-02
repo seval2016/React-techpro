@@ -22,4 +22,4 @@ npm install formik yup
 npm i react-router-dom
 
 **************************
-npm install @redux/toolkit react-redux
+npm install @reduxjs/toolkit react-redux
