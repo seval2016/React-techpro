@@ -1,7 +1,9 @@
 import { userInitialState } from "./initial-state";
 import { USER_LOGIN, USER_LOGOUT } from "./types";
 
-//Reducer : Zorunlu, bu kısmı muhakkak tanımlamak zorundayız. State'i güncelleyen fonksiyonlardır.
+/*Reducer : Zorunlu, bu kısmı muhakkak tanımlamak zorundayız. State'i güncelleyen fonksiyonlardır.
+Kullanıcıyı login yapmak istediğimde doğru action'ları yönlendirdiğimiz yer
+*/
 export const userReducer = (state = userInitialState, action) => {
 	if (action.type === USER_LOGIN) {
 		return { ...state, isUserLogin: true, user: action.payload };

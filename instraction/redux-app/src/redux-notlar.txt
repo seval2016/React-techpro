@@ -1,0 +1,20 @@
+Redux Nedir?
+Uygulama state'ini merkezileştirmek için kullanılan açık kaynak bir js kütüphanesidir.
+Redux, state'i bir nesne olarak tutmak yerine, state'i bir obje olarak tutmak
+ve bu objeyi bir değişkende tutmak için kullanılır. Bu sayede state'i de
+değiştirmek için değişkeni değiştirmek yeterli olur.
+
+Redux-Toolkit nedir ?
+
+Redux'ın, redux yapısını oluşturma konusunda kurumsal olarak kullanmasını tavsiye ettiği yeni bir yaklaşım sunan 
+en yeni kütüphanesidir.React ve redux'ın merkezi state oluşturma konusundaki dağınık yaklaşımını basitleştirmiştir.
+
+Slices :
+
+Slice, initial state, action ve reducer'ların tek bir yerden oluşturdukları yapılardır. 
+Action'lar otomatik oluşturulur
+
+Redux Store 
+
+Tüm uygulamaya açılacak olan merkezi state burada oluşturulur. Oluşturulan store'a erişim ve manipulasyon için
+ useSelektor ve useDispatch fonksiyonları kullanılır.
