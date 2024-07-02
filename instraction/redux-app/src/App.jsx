@@ -1,11 +1,10 @@
 import React from "react";
 import AppRouter from "./router";
-import { Provider as StoreProvider } from "react-redux";
-import { store } from "./store";
+import { StoreProvider } from "./store"; // Import from your custom store file
 
 const App = () => {
   return (
-    <StoreProvider store={store}>
+    <StoreProvider>
       <AppRouter />
     </StoreProvider>
   );
