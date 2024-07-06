@@ -4,7 +4,7 @@ import data from "../../assets/data/students.json";
 const SelectedCourses2 = () => {
   return (
     <div>
-    <Select>
+    <select>
       <option disabled>Select Course</option>
       {data
         .reduce((values, course) => {
@@ -14,7 +14,7 @@ const SelectedCourses2 = () => {
         .map((item, index) => (
           <option key={index}>{item}</option>
         ))}
-    </Select>
+    </select>
     </div>
   );
 };
