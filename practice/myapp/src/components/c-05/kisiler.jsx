@@ -7,10 +7,10 @@ import Kisi from './Kisi'
 const Tablo = () => {
   return (
     <Container>
-      <Row className='d-flex gap-4 my-5'>
+      <Row className='d-flex text-center'>
         {
           data.map((item, index) => (
-            <Col key={index} xs="auto">
+            <Col key={index} md={6} lg={3}>
               <Kisi {...item} />
             </Col>
           ))

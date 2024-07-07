@@ -3,6 +3,7 @@ npm create vite@latest
 **************************
 
 npm install sass --save-dev
+@import '~bootstrap/scss/bootstrap';
 
 /*************************
 
@@ -11,7 +12,7 @@ npm i react-icons
 /*************************
 
 npm install react-bootstrap bootstrap 
-import 'bootstrap/dist/css/bootstrap.min.css';
+css sayfası içerisine @import 'bootstrap/dist/css/bootstrap.min.css';
 
 **************************
 
